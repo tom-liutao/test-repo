@@ -1,0 +1,33 @@
+# The west manifest file for sapphire_software.
+#
+# The per-installation west configuration file, .west/config, sets the
+# path to the project containing this file in the [manifest] section's
+# "path" variable.
+#
+
+
+manifest:
+  version: "0.13"
+
+  # "remotes" is a list of locations where git repositories are cloned
+  # and fetched from.
+  remotes:
+    - name: tom-liutao
+      url-base: git@github.com:tom-liutao
+
+  # If not otherwise specified, the projects below should be obtained
+  # from the ambiqmicro bitbucket remote.
+  defaults:
+    remote: tom-liutao
+
+  # "projects" is a list of git repositories managed by west.
+  # Please add items below based on alphabetical order.
+
+  projects:
+    - name: test-submodule
+      revision: master
+      path: module/test-submodule
+
+  self:
+    path: test-repo
+
