@@ -26,7 +26,7 @@ manifest:
   projects:
     - name: test-submodule
       revision: master
-      path: module/test-submodule
+      path: test-repo/test-submodule
 
   self:
     path: test-repo
